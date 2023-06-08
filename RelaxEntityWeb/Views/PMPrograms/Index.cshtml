@@ -1,0 +1,232 @@
+﻿@model ProgramDataHelper
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="modal fade bd-example-modal-lg" id="addProgram" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Создание программы</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form asp-action="AddProgram" asp-controller="PMPrograms" method="post">
+						<div class="form-group">
+							<label>Название программы</label>
+							<input type="text" asp-for="Name" placeholder="Название программы" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Описание</label>
+							<textarea class="form-control" asp-for="Description" id="exampleFormControlTextarea1" placeholder="Текст описания" rows="5"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Длительность</label>
+							<input type="text" asp-for="Duration"  placeholder="00:00 (чч:мм)" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Возраст</label>
+							<input type="number" asp-for="Age" placeholder="Нижняя граница возраста" class="form-control">
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-primary" type="submit">Создать</button>
+							<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bd-example-modal-lg" id="editProgram" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Редактирование программы</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label>Название программы</label>
+							<input type="text" value="Творческая игровая программа 'Юный модельер'" placeholder="Название программы" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Описание</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Текст описания" rows="5"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Длительность</label>
+							<input type="text" value="01:30" placeholder="чч:мм" class="form-control">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" type="submit">Сохранить</button>
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="deleteProgram" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Удаление программы</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<label>Вы точно хотетите удалить програму?</label>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" type="submit" id="editManager">Удалить</button>
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mainwrapper" style="min-width: 900px">
+		<nav class="navbar navbar-light mb-4" style="background-color: #e3f2fd;">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMEventsPrepare/Index">Багетная мастерская</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мероприятия</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="../../PMEventsPick/Index">Выбираемые</a>
+						<a class="dropdown-item" href="../../PMEventsInvalid/Index">Брак</a>
+						<a class="dropdown-item" href="../../PMEventsComplete/Index">Проведенные</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="../../PMPrograms/Index">Программы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMOrders/Index">Заказы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMLocations/Index">Локации</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMProfile/Index">Профиль</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 justify-content-end" action="../../Home/Index" method="POST" name="exitForm">
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Выйти</button>
+			</form>
+		</nav>
+	</div>
+	<div class="card text-left pl-3 border-0" style="max-width: 1200px">
+		<h3>Программы</h3>
+		<div class="my-3">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addProgram" data-target=".bd-example-modal-lg">
+				<svg class="bi bi-plus" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+					<path fill-rule="evenodd" d="M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z" clip-rule="evenodd"></path>
+				</svg>
+				Создать программу
+			</button>
+		</div>
+		<div class="row row-cols-1 row-cols-md-2">
+			@using (var context = new RelaxEntityContext())
+			{
+				var client = context.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+				var pm = context.ProjectManagers.Where(x => x.Client == client.Email).FirstOrDefault();
+				var programs = context.Programms.Where(x => x.Organization == pm.Organization);
+				foreach (var curProgram in programs)
+				{
+					<div class="col mb-4">
+						<div class="card h-100 bg-light">
+							<div class="card-body">
+								<div class="row">
+									<div class="px-3">
+										<img src="/icons-1.0.0-alpha2/icons/book.svg" alt="" width="75px" height="75px">
+									</div>
+									<div class="px-3">
+										<div class="row mb-2">
+											<p class="card-text">@curProgram.Name</p>
+										</div>
+										<div class="row text-left">
+											<div class="mb-3">
+												<div class="row">
+													<div class="my-auto">
+														<img src="/icons-1.0.0-alpha2/icons/age.jpg" alt="" width="35" height="35" title="Возраст" />
+													</div>
+													<div class="col">
+														<p class="m-0 text-muted"><small class="text-muted">Возраст</small></p>
+														<p class="m-0">@curProgram.Age+</p>
+													</div>
+													<div class="my-auto">
+														<img src="/icons-1.0.0-alpha2/icons/stopwatch.svg" alt="" width="35" height="35" title="Длительность">
+													</div>
+													<div class="col">
+														<p class="m-0 text-muted"><small class="text-muted">Длительность</small></p>
+														<p class="m-0">@curProgram.Duration</p>
+													</div>
+													<div class="col">
+														<button type="button" class="btn text-info" data-toggle="modal" data-target="#description" title="Описание">
+															<img src="/icons-1.0.0-alpha2/icons/document-text.svg" alt="" width="35" height="35" title="Описание">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="btn-group dropbottom">
+										<button type="button" class="btn text-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										</button>
+										<div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+											<button type="button" class="btn btn-light" data-toggle="modal" data-target="#editProgram" data-placement="right" title="Редактировать">
+												Редактировать
+											</button>
+											<button type="button" class="btn btn-light" data-toggle="modal" data-target="#deleteProgram" data-placement="right" title="Удалить">
+												Удалить
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" id="description" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Описание</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">@curProgram.Description</div>
+								<div class="modal-footer">
+									<button class="btn btn-secondary" type="button" data-dismiss="modal">Закрыть</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				}
+			}
+		</div>
+	</div>
+
+	<div id="content">
+		<?php echo $tpl['content']?>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

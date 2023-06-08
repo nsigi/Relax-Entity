@@ -1,0 +1,267 @@
+﻿@model OrderHelper
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="modal fade bd-example-modal-lg" id="editEvent" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Редактирование мероприятия</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="edProgram">Программа</label>
+							<select id="edProgram" class="form-control">
+								<option>Занятия для маленьких и тупых!</option>
+								<option>Театр</option>
+								<option>Добровольный труд</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="edEvent">Название мероприятия</label>
+							<div class="row">
+								<div class="w-75 col">
+									<input type="text" placeholder="Название программы" value="Занятия для маленьких и тупых!" class="form-control" id="edEvent">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="edDate">Дата</label>
+							<input type="datetime-local" class="form-control" id="edDate"value="2020-06-01T10:30">
+						</div>
+						<div class="form-group">
+							<label for="maxCount">Количество людей</label>
+							<div class="row">
+								<div class="col-auto">
+									<input type="text" placeholder="Количество людей" class="form-control" id="maxCount">
+								</div>
+							</div>
+						</div>			
+						<div class="form-group">
+							<label for="edCost">Цена(руб)</label>
+							<input type="text" id="edCost" placeholder="0" value="0" class="form-control" >
+						</div>
+						<div class="form-group">
+							<label for="edLocation">Место проведения</label>
+							<select id="edLocation" class="form-control">
+								<option>310</option>
+								<option>226</option>
+								<option selected>Площадка</option>
+								<option>Актовый зал</option>
+								<option>Подвал</option>
+							</select>
+						</div>
+						<div class="form-group">	
+							<label for="edNote">Примечание</label>
+							<textarea class="form-control" id="edNote" placeholder="Текст описания" rows="4">Praesent egestas neque eu enim. Morbi ac felis. Suspendisse potenti. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Phasellus blandit leo ut odio. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. In ut quam vitae odio lacinia tincidunt. Donec mi o</textarea>
+						</div>	
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" type="submit">Сохранить</button>
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="deleteEvent" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Удаление мероприятия</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<label>Вы точно хотетите удалить мероприятие?</label>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" type="submit" id="editManager">Удалить</button>
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div id="mainwrapper" style="min-width: 900px">
+		<nav class="navbar navbar-light mb-4" style="background-color: #e3f2fd;">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMEventsPrepare/Index">Багетная мастерская</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мероприятия</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="../../PMEventsPick/Index">Выбираемые</a>
+						<a class="dropdown-item" href="../../PMEventsInvalid/Index">Брак</a>
+						<a class="dropdown-item" href="../../PMEventsComplete/Index">Проведенные</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMPrograms/Index">Программы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMOrders/Index">Заказы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMLocations/Index">Локации</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMProfile/Index">Профиль</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 justify-content-end" action="../../Home/Index" method="POST" name="exitForm">
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Выйти</button>
+			</form>
+		</nav>
+	</div>
+	@using (var context = new RelaxEntityContext())
+	{
+		var curEvent = context.Events.Where(x => x.Id == Model.CurrentEventId).FirstOrDefault();
+		var curProgram = context.Programms.Where(x => x.Id == curEvent.ProgramId).FirstOrDefault();
+		var curLocation = context.Locations.Where(x => x.Id == curEvent.LocationId).FirstOrDefault();
+		var curOrganization = context.Organizations.Where(x => x.Name == curLocation.Organization).FirstOrDefault();
+		var longDate = @curEvent.Date.ToLongDateString();
+		<div class="mx-3" style="max-width: 1200px">
+			<h3>@curEvent.Name</h3>
+			<div class="row">
+				<div class="col ml-4">
+					<div class="mb-3" style="max-width: 300px;">
+						<div class="row">
+							<div class="col-md-2 my-auto">
+								<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="50" height="50" title="Дата проведения" />
+							</div>
+							<div class="col">
+								<p class="m-0 text-muted"><small class="text-muted">Дата проведения</small></p>
+								<p class="m-0">@longDate, @curEvent.Date.DayOfWeek.ToRus()</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="mb-3" style="max-width: 300px;">
+								<div class="row">
+									<div class="col-md-2 my-auto">
+										<img src="/icons-1.0.0-alpha2/icons/watch.svg" alt="" width="50" height="50" title="Время проведения" />
+									</div>
+									<div class="col">
+										<p class="m-0 text-muted"><small class="text-muted">Время проведения</small></p>
+										<p class="m-0">@curEvent.StartTime.ToString(@"hh\:mm")</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3" style="max-width: 300px;">
+								<div class="row">
+									<div class="col-md-2 my-auto">
+										<img src="/icons-1.0.0-alpha2/icons/age.jpg" alt="" width="50" height="50" title="Возраст" />
+									</div>
+									<div class="col">
+										<p class="m-0 text-muted"><small class="text-muted">Возраст</small></p>
+										<p class="m-0">@curProgram.Age+</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3" style="max-width: 300px;">
+								<div class="row">
+									<div class="col-md-2 my-auto">
+										<img src="/icons-1.0.0-alpha2/icons/people.svg" alt="" width="50" height="50" title="Количество" />
+									</div>
+									<div class="col">
+										<p class="m-0 text-muted"><small class="text-muted">Свободных мест</small></p>
+										<p class="m-0">@curEvent.CountCurrent</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3" style="max-width: 300px;">
+								<div class="row">
+									<div class="col-md-2 my-auto">
+										<img src="/icons-1.0.0-alpha2/icons/credit-card.svg" alt="" width="50" height="50" title="Цена" />
+									</div>
+									<div class="col">
+										<p class="m-0 text-muted"><small class="text-muted">Цена (руб)</small></p>
+										<p class="m-0">@curEvent.Price</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="mb-3" style="max-width: 300px;">
+								<div class="row">
+									<div class="col-md-2 my-auto">
+										<img src="/icons-1.0.0-alpha2/icons/house.svg" alt="" width="50" height="50" title="Организация" />
+									</div>
+									<div class="col">
+										<p class="m-0 text-muted"><small class="text-muted">Организация</small></p>
+										<p class="m-0">@curOrganization.Name</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3" style="max-width: 300px;">
+								<div class="row">
+									<div class="col-md-2 my-auto">
+										<img src="/icons-1.0.0-alpha2/icons/cursor-fill.svg" alt="" width="50" height="50" title="Адрес" />
+									</div>
+									<div class="col">
+										<p class="m-0 text-muted"><small class="text-muted">Адрес</small></p>
+										<p class="m-0">@curOrganization.Address.</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3" style="max-width: 300px;">
+								<div class="row">
+									<div class="col-md-2 my-auto">
+										<img src="/icons-1.0.0-alpha2/icons/geo.svg" alt="" width="50" height="50" title="Место" />
+									</div>
+									<div class="col">
+										<p class="m-0 text-muted"><small class="text-muted">Место</small></p>
+										<p class="m-0">@curLocation.Name</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3" style="max-width: 300px;">
+								<div class="row">
+									<div class="col-md-2 my-auto">
+										<img src="/icons-1.0.0-alpha2/icons/stopwatch.svg" alt="" width="50" height="50" title="Длительность" />
+									</div>
+									<div class="col">
+										<p class="m-0 text-muted"><small class="text-muted">Длительность</small></p>
+										<p class="m-0">@curProgram.Duration.ToString(@"hh\:mm")</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-light mb-3">
+						<div class="card-header">Описание</div>
+						<div class="card-body">@curProgram.Description</div>
+					</div>
+					<div class="card bg-light mb-3">
+						<div class="card-header">Примечание</div>
+						<div class="card-body">@curEvent.Note</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+			
+
+	<div id="content">
+		<?php echo $tpl['content']?>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

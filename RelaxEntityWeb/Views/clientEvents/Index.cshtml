@@ -1,0 +1,204 @@
+﻿@model OrderHelper
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="modal fade" id="addEvent" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Добавление мероприятия в заказ</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form asp-action="AddOrder" method="post">
+						<div class="form-group">
+							<label>Количество людей</label>
+							<input type="number" placeholder="Количество людей" asp-for="QuantityOfPeople" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<input type="number" asp-for="CurrentEventId" id="output_id" hidden>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-primary" type="submit" id="editManager">Добавить</button>
+							<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="mainwrapper">
+		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+			<ul class="nav mr-auto nav-pills">
+				<li class="nav-item"><a class="nav-link active" asp-action="Index" asp-controller="clientEvents">Мероприятия</a></li>
+				<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="clientOrders">Заказы</a></li>
+				<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="clientProfile">Профиль</a></li>
+			</ul>
+
+			<form class="form-inline my-2 my-lg-0 justify-content-end" action="../../Home/Index" method="post" name="exitForm">
+				<button type="button" class="btn btn-primary" style="margin-right: 15px;">
+					<img src="/icons-1.0.0-alpha2/icons/archive-fill.svg" alt="Корзина" width="32" height="32" title="Корзина">
+					@using (var context = new RelaxEntityContext())
+					{
+						var client = context.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+						var orders = context.Orders.Where(x => x.ClientNavigation == client).Distinct().OrderBy(x => x);
+						<span class="badge badge-light">@orders.Count()</span> @*число заказов*@
+					}
+				</button>
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="submit" action="Home/Index">Выйти</button>
+			</form>
+		</nav>
+	</div>
+	@{
+		using (var context = new RelaxEntityContext())
+		{
+			@foreach (var curDate in context.Events.Where(x => x.Status == (int)EventStatus.Actived || x.Status == (int)EventStatus.Pick).Select(x => x.Date).Distinct().OrderBy(x => x))
+			{
+				var longDate = curDate.ToLongDateString();
+				var dateComponents = longDate.Split(' ');
+				var longDateWithoutYear = string.Format("{0} {1}", dateComponents[0], dateComponents[1]);
+				<div class="mx-3">
+					<h3>@longDate</h3>
+					@using (var context1 = new RelaxEntityContext())
+					{
+						@foreach (var event_ in context1.Events.Where(x => x.Date == curDate && (x.Status == (int)EventStatus.Actived || x.Status == (int)EventStatus.Pick)))
+						{
+							<div class="row row-cols-1 row-cols-md-2" id=@event_.Id>
+								<div class="col mb-4">
+									<div class="card h-100 bg-light">
+										<div class="card-body">
+											<div class="row">
+												<div class="w-25 px-3">
+													<div class="card text-center">
+														<div class="card-header">
+															<h4 class="card-title">@event_.StartTime.ToString(@"hh\:mm")</h4> @*время*@
+															@{
+																<p class="card-text mb-0"><small>@longDateWithoutYear, @curDate.DayOfWeek.ToRus()</small></p>
+															}
+														</div>
+														<div class="card-body">
+															@using (var context2 = new RelaxEntityContext())
+															{
+																foreach (var location in context2.Locations.Where(x => x.Id == event_.LocationId))
+																{
+																	<p class="card-title">@location.Name</p> @*место*@
+																}
+															}
+														</div>
+													</div>
+												</div>
+												<div class="w-50 px-3">
+													<div class="row mb-2">
+														<p class="card-text">
+															@{
+																var dict = new Dictionary<string, string>();
+																dict["eventId"] = event_.Id.ToString();
+															}
+															<a asp-action="Index" asp-controller="clientEvent" asp-route-id=@event_.Id method="post"><strong>@event_.Name"</strong></a>
+														</p> @*название*@
+													</div>
+													<div class="row text-left">
+														<div class="col">
+															<div class="mb-3" style="max-width: 300px;">
+																<div class="row">
+																	<div class="my-auto">
+																		<img src="/icons-1.0.0-alpha2/icons/age.jpg" alt="" width="35" height="35" title="Возраст" />
+																	</div>
+																	<div class="col">
+																		<p class="m-0 text-muted"><small class="text-muted">Возраст</small></p>
+																		@using(var context2 = new RelaxEntityContext())
+																		{
+																			var program = context2.Programms.Where(x => x.Id == event_.ProgramId).FirstOrDefault();
+																			<p class="m-0">@program.Age+</p>
+																		}
+																	</div>
+																</div>
+															</div>
+															<div class="mb-3" style="max-width: 300px;">
+																<div class="row">
+																	<div class="my-auto">
+																		<img src="/icons-1.0.0-alpha2/icons/people.svg" alt="" width="35" height="35" title="Свободных мест" />
+																	</div>
+																	<div class="col">
+																		<p class="m-0 text-muted"><small class="text-muted">Свободных мест</small></p>
+																		<p class="m-0">@event_.CountCurrent</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="mb-3" style="max-width: 300px;">
+																<div class="row">
+																	<div class="my-auto">
+																		<img src="/icons-1.0.0-alpha2/icons/credit-card.svg" alt="" width="35" height="35" title="Цена" />
+																	</div>
+																	<div class="col">
+																		<p class="m-0 text-muted"><small class="text-muted">Цена (руб)</small></p>
+																		<p class="m-0">@event_.Price</p>
+																	</div>
+																</div>
+															</div>
+															<div class="mb-3" style="max-width: 300px;">
+																<div class="row">
+																	<div class="my-auto">
+																		<img src="/icons-1.0.0-alpha2/icons/stopwatch.svg" alt="" width="35" height="35" title="Длительность" />
+																	</div>
+																	<div class="col">
+																		<p class="m-0 text-muted"><small class="text-muted">Длительность</small></p>
+																		@using (var context3 = new RelaxEntityContext())
+																		{
+																			foreach (var program in context3.Programms.Where(x => x.Id == event_.ProgramId))
+																			{
+																				<p class="m-0">@program.Duration.ToString(@"hh\:mm")</p>
+																				/*длительность*/
+																			}
+																		}
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="m-auto">
+														<button onclick=@string.Format("GetEventId({0})", event_.Id) type="button" id=@event_.Id class="btn text-success" data-toggle="modal" data-target="#addEvent" title="Добавить в заказ">
+															<svg class="bi bi-plus" width="3em" height="3em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+																<path fill-rule="evenodd" d="M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+																<path fill-rule="evenodd" d="M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z" clip-rule="evenodd"></path>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						}
+					}
+				</div>
+			}
+		}
+	}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		function GetEventId(eventId) {
+			console.log(eventId);
+			document.getElementById('output_id').value = eventId;
+			console.log(eventId);
+		}
+	</script>
+</body>
+</html>

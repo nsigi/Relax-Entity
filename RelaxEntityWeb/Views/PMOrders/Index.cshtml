@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div id="mainwrapper" style="min-width: 900px">
+		<nav class="navbar navbar-light mb-4" style="background-color: #e3f2fd;">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMEventsPrepare/Index">Багетная мастерская</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мероприятия</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="../../PMEventsPick/Index">Выбираемые</a>
+						<a class="dropdown-item" href="../../PMEventsInvalid/Index">Брак</a>
+						<a class="dropdown-item" href="../../PMEventsComplete/Index">Проведенные</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMPrograms/Index">Программы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="../../PMOrders/Index">Заказы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMLocations/Index">Локации</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMProfile/Index">Профиль</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 justify-content-end" action="../../Home/Index" method="POST" name="exitForm">
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Выйти</button>
+			</form>
+		</nav>
+	</div>
+	<div class="card text-left pl-3 border-0" style="max-width: 1200px">
+		<h3>Оплаченные</h3>
+		<div class="row row-cols-1 row-cols-md-2">
+		@using (var context = new RelaxEntityContext())
+		{
+			var orders = context.Orders.Where(x => x.Status==StatusOrderHelper.Payed);
+			foreach (var order in orders)
+			{
+					Event event_; Client client;
+					@using (var context1 = new RelaxEntityContext())
+					{ event_ = context1.Events.Where(x => x.Id==order.EventId).FirstOrDefault();}
+					@using (var context2 = new RelaxEntityContext())
+					{
+						client = context2.Clients.Where(x => x.Email==order.ClientId).FirstOrDefault();
+					}
+					<div class="col mb-4">
+				<div class="card h-100 bg-light">
+					<div class="card-body">
+						<div class="row">
+							<div class="px-3 text-center">
+								<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
+								<p class="card-title"><small>@client.Name</small></p>
+							</div>
+							<div class="px-3">
+								<div class="row mb-2">
+									<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@order.EventId ><strong>@event_.Name</strong></a></p>
+								</div>
+								<div class="row text-left">
+									<div class="col" style="max-width: 300px;">
+										<div class="row">
+											<div class="my-auto">
+												<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
+											</div>
+											<div class="col">
+												<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
+												<p class="m-0">@order.Date</p>
+											</div>
+										</div>
+									</div>
+									<div class="col" style="max-width: 300px;">
+										<div class="row">
+											<div class="my-auto">
+												<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
+											</div>
+											<div class="col">
+												<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
+												<p class="m-0">@order.Count</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			}
+		}
+	</div>
+
+
+		<h3>Отменённые</h3>		
+		<div class="row row-cols-1 row-cols-md-2">
+			<div class="col mb-4">
+				<div class="card h-100 bg-light">
+					<div class="card-body">
+						<div class="row">
+							<div class="px-3 text-center">
+								<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
+								<p class="card-title"><small>Иванов И.А.</small></p>
+							</div>
+							<div class="px-3">
+								<div class="row mb-2">
+									<p class="card-text"><a href="../../PMEvent/Index"><strong>Творческая игровая программа "Юный модельер"</strong></a></p>
+								</div>
+								<div class="row text-left">
+									<div class="col" style="max-width: 300px;">
+										<div class="row">
+											<div class="my-auto">
+												<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
+											</div>
+											<div class="col">
+												<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
+												<p class="m-0">15-05-2023</p>
+											</div>
+										</div>
+									</div>
+									<div class="col" style="max-width: 300px;">
+										<div class="row">
+											<div class="my-auto">
+												<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
+											</div>
+											<div class="col">
+												<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
+												<p class="m-0">150</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+
+		<h3>Завершённые</h3>			
+		<div class="row row-cols-1 row-cols-md-2">
+			<div class="col mb-4">
+				<div class="card h-100 bg-light">
+					<div class="card-body">
+						<div class="row">
+							<div class="px-3 text-center">
+								<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
+								<p class="card-title"><small>Иванов И.А.</small></p>
+							</div>
+							<div class="px-3">
+								<div class="row mb-2">
+									<p class="card-text"><a href="../../PMEvent/Index"><strong>Творческая игровая программа "Юный модельер"</strong></a></p>
+								</div>
+								<div class="row text-left">
+									<div class="col" style="max-width: 300px;">
+										<div class="row">
+											<div class="my-auto">
+												<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
+											</div>
+											<div class="col">
+												<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
+												<p class="m-0">15-05-2023</p>
+											</div>
+										</div>
+									</div>
+									<div class="col" style="max-width: 300px;">
+										<div class="row">
+											<div class="my-auto">
+												<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
+											</div>
+											<div class="col">
+												<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
+												<p class="m-0">150</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="content">
+		<?php echo $tpl['content']?>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

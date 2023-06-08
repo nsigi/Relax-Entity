@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div id="mainwrapper" style="min-width: 900px">
+		<nav class="navbar navbar-light mb-4" style="background-color: #e3f2fd;">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMEventsPrepare/Index">Багетная мастерская</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мероприятия</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="../../PMEventsPick/Index">Выбираемые</a>
+						<a class="dropdown-item" href="../../PMEventsInvalid/Index">Брак</a>
+						<a class="dropdown-item" href="../../PMEventsComplete/Index">Проведенные</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMPrograms/Index">Программы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMOrders/Index">Заказы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMLocations/Index">Локации</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMProfile/Index">Профиль</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 justify-content-end" action="../../Home/Index" method="POST" name="exitForm">
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Выйти</button>
+			</form>
+		</nav>
+	</div>	
+	<div class="mx-3" style="min-width: 1000px">
+		<div class="row">
+			@using(var context = new RelaxEntityContext())
+			{
+				var events = context.Events.Where(x=>x.Status == (int)EventStatus.Deleted);
+				foreach (var event_ in events)
+				{
+									<div class="col">
+				<h2>Удаленные</h2>
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col mb-4">
+						<div class="card bg-light">
+							<div class="card-body">
+								<div class="row">
+									<div class="w-75 mx-2">
+										<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@event_.Id ><strong>@event_.Name</strong></a></p>
+									</div>
+								</div>
+							</div>	
+						</div></div>
+				</div>
+				</div>
+				}
+			}
+			<div class="col">
+							@using(var context = new RelaxEntityContext())
+			{
+				var events = context.Events.Where(x=>x.Status == (int)EventStatus.Canceled);
+				foreach (var event_ in events)
+				{
+									<div class="col">
+				<h2>Отменённые</h2>
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col mb-4">
+						<div class="card bg-light">
+							<div class="card-body">
+								<div class="row">
+									<div class="w-75 mx-2">
+										<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@event_.Id ><strong>@event_.Name</strong></a></p>
+									</div>
+								</div>
+							</div>	
+						</div></div>
+				</div>
+				</div>
+				}
+			}
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="content">
+		<?php echo $tpl['content']?>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+﻿@model OrderHelper
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div id="mainwrapper" style="min-width: 900px">
+		<nav class="navbar navbar-light mb-4" style="background-color: #e3f2fd;">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMEventsPrepare/Index">Багетная мастерская</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мероприятия</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="../../PMEventsPick/Index">Выбираемые</a>
+						<a class="dropdown-item" href="../../PMEventsInvalid/Index">Брак</a>
+						<a class="dropdown-item" href="../../PMEventsComplete/Index">Проведенные</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMPrograms/Index">Программы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMOrders/Index">Заказы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMLocations/Index">Локации</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../PMProfile/Index">Профиль</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 justify-content-end" action="../../Home/Index" method="POST" name="exitForm">
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Выйти</button>
+			</form>
+		</nav>
+	</div>
+	<div class="mx-3"   style="max-width: 1200px">
+		<h2>Выбираемые</h2>
+		@using (var context1 = new RelaxEntityContext())
+		{
+			@foreach (var event_ in context1.Events.Where(x => x.Status == (int)EventStatus.Actived || x.Status == (int)EventStatus.Pick))
+			{
+				<div class="row row-cols-1 row-cols-md-2" id=@event_.Id>
+					<div class="col mb-4">
+						<div class="card h-100 bg-light">
+							<div class="card-body">
+								<div class="row">
+									<div class="w-25 px-3">
+										<div class="card text-center">
+											<div class="card-header">
+												<h4 class="card-title">@event_.StartTime.ToString(@"hh\:mm")</h4> @*время*@
+												@{	var longDate = event_.Date.ToLongDateString();
+													var dateComponents = longDate.Split(' ');
+													var longDateWithoutYear = string.Format("{0} {1}", dateComponents[0], dateComponents[1]);
+													<p class="card-text mb-0"><small>@longDateWithoutYear, @event_.Date.DayOfWeek.ToRus()</small></p>
+												}
+											</div>
+											<div class="card-body">
+												@using (var context2 = new RelaxEntityContext())
+												{
+													foreach (var location in context2.Locations.Where(x => x.Id == event_.LocationId))
+													{
+														<p class="card-title">@location.Name</p> @*место*@
+													}
+												}
+											</div>
+										</div>
+									</div>
+									<div class="w-50 px-3">
+										<div class="row mb-2">
+											<p class="card-text">
+												@{
+													var dict = new Dictionary<string, string>();
+													dict["eventId"] = event_.Id.ToString();
+												}
+												<a asp-action="Index" asp-controller="PMEvent" asp-route-id=@event_.Id method="post"><strong>@event_.Name"</strong></a>
+											</p> @*название*@
+										</div>
+										<div class="row text-left">
+											<div class="col">
+												<div class="mb-3" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/age.jpg" alt="" width="35" height="35" title="Возраст" />
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Возраст</small></p>
+															@using(var context2 = new RelaxEntityContext())
+															{
+																var program = context2.Programms.Where(x => x.Id == event_.ProgramId).FirstOrDefault();
+																<p class="m-0">@program.Age+</p>
+															}
+														</div>
+													</div>
+												</div>
+												<div class="mb-3" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/people.svg" alt="" width="35" height="35" title="Свободных мест" />
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Свободных мест</small></p>
+															<p class="m-0">@event_.CountCurrent</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="mb-3" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/credit-card.svg" alt="" width="35" height="35" title="Цена" />
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Цена (руб)</small></p>
+															<p class="m-0">@event_.Price</p>
+														</div>
+													</div>
+												</div>
+												<div class="mb-3" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/stopwatch.svg" alt="" width="35" height="35" title="Длительность" />
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Длительность</small></p>
+															@using (var context3 = new RelaxEntityContext())
+															{
+																foreach (var program in context3.Programms.Where(x => x.Id == event_.ProgramId))
+																{
+																	<p class="m-0">@program.Duration.ToString(@"hh\:mm")</p>
+																	/*длительность*/
+																}
+															}
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="m-auto">
+											@if(event_.Status == (int)EventStatus.Actived)
+											{
+												<button onclick=@string.Format("GetOrderId({0})", event_.Id) type="submit" class="btn text-danger" data-toggle="modal" data-target="#deletedEvent" title="Удалить">
+													<svg class="bi bi-trash" width="3em" height="3em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.5 7.5A.5.5 0 018 8v6a.5.5 0 01-1 0V8a.5.5 0 01.5-.5zm2.5 0a.5.5 0 01.5.5v6a.5.5 0 01-1 0V8a.5.5 0 01.5-.5zm3 .5a.5.5 0 00-1 0v6a.5.5 0 001 0V8z"></path>
+														<path fill-rule="evenodd" d="M16.5 5a1 1 0 01-1 1H15v9a2 2 0 01-2 2H7a2 2 0 01-2-2V6h-.5a1 1 0 01-1-1V4a1 1 0 011-1H8a1 1 0 011-1h2a1 1 0 011 1h3.5a1 1 0 011 1v1zM6.118 6L6 6.059V15a1 1 0 001 1h6a1 1 0 001-1V6.059L13.882 6H6.118zM4.5 5V4h11v1h-11z" clip-rule="evenodd"></path>
+													</svg>
+												</button>
+											}
+											else
+											{
+												<button onclick=@string.Format("GetOrderId({0})", event_.Id) type="submit" class="btn text-info" data-toggle="modal" data-target="#deletedEvent" data-placement="right" title="Отменить">
+													<svg class="bi bi-x" width="3em" height="3em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z" clip-rule="evenodd"></path>
+														<path fill-rule="evenodd" d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"></path>
+													</svg>
+												</button>
+											}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="deletedEvent" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Вы точно хотите отменить или удалить мероприятие?</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-footer">
+								<form method="post" asp-action="ChangeEventStatus" asp-controller="PMEventsPick">
+									<div>
+										<input type="number" asp-for="CurrentEventId" id="output_id" hidden>
+										<button class="btn btn-primary" type="submit">Подтвердить</button>
+										<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+		}
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		function GetOrderId(orderId) 
+		{
+			document.getElementById('output_id').value = orderId;
+		}
+	</script>
+</body>
+</html>

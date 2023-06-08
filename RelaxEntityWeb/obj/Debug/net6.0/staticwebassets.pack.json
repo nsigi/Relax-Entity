@@ -1,0 +1,1849 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RelaxEntityWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RelaxEntityWeb.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\.browserslistrc",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\.browserslistrc"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\.editorconfig",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\.editorconfig"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\.eslintrc.json",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\.eslintrc.json"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\.gitattributes",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\.gitattributes"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\.gitignore",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\.gitignore"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\.stylelintignore",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\.stylelintignore"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\.stylelintrc",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\.stylelintrc"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\LICENSE.md",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\README.md",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\README.md"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\build\\build-svgs.js",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\build\\build-svgs.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\build\\vnu-jar.js",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\build\\vnu-jar.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\config.yml",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\config.yml"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_ads.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_ads.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_footer.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_footer.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_functions.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_skippy.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_skippy.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_syntax.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_syntax.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\assets\\scss\\docs.scss",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\assets\\scss\\docs.scss"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\content\\404.md",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\content\\404.md"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\content\\_index.md",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\content\\_index.md"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\_default\\404.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\_default\\404.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\_default\\home.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\_default\\home.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\analytics.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\analytics.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\favicons.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\favicons.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\footer.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\footer.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\header.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\header.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\hero.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\hero.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\bootstrap-logo-solid.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\bootstrap-logo-solid.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\github.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\github.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\opencollective.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\opencollective.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\slack.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\slack.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\twitter.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\icons\\twitter.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\navbar.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\navbar.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\scripts.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\scripts.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\skippy.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\skippy.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\social.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\social.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\stylesheet.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\partials\\stylesheet.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\robots.txt",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\robots.txt"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\shortcodes\\example.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\shortcodes\\example.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\shortcodes\\md.html",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\shortcodes\\md.html"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\layouts\\sitemap.xml",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\layouts\\sitemap.xml"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\CNAME",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\bootstrap-icons-social.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\bootstrap-icons-social.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\bootstrap.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\bootstrap.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\apple-touch-icon.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\browserconfig.xml",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\browserconfig.xml"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\favicon-16x16.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\favicon-32x32.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\favicon.ico",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\favicon.ico"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\manifest.json",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\manifest.json"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-144x144.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-144x144.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-150x150.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-310x150.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-310x150.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-310x310.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-310x310.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-70x70.png",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\mstile-70x70.png"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\safari-pinned-tab.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\docs\\static\\assets\\img\\favicons\\safari-pinned-tab.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\age.jpg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\age.jpg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alarm-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alarm-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alarm.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alarm.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alert-circle-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alert-circle-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alert-circle.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alert-circle.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alert-octagon-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alert-octagon-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alert-octagon.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alert-octagon.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alert-square-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alert-square-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alert-square.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alert-square.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alert-triangle-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alert-triangle-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\alert-triangle.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\alert-triangle.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\archive-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\archive-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\archive.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\archive.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-bar-bottom.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-bar-bottom.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-bar-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-bar-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-bar-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-bar-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-bar-up.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-bar-up.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-clockwise.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-clockwise.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-counterclockwise.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-counterclockwise.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-down-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-down-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-down-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-down-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-down-short.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-down-short.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-down.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-down.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-left-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-left-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-left-short.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-left-short.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-repeat.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-repeat.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-right-short.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-right-short.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-up-down.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-up-down.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-up-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-up-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-up-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-up-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-up-short.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-up-short.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrow-up.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrow-up.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrows-angle-contract.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrows-angle-contract.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrows-angle-expand.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrows-angle-expand.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrows-collapse.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrows-collapse.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrows-expand.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrows-expand.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\arrows-fullscreen.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\arrows-fullscreen.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\at.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\at.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\award.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\award.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\backspace-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\backspace-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\backspace-reverse-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\backspace-reverse-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\backspace-reverse.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\backspace-reverse.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\backspace.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\backspace.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bar-chart-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bar-chart-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bar-chart.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bar-chart.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\battery-charging.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\battery-charging.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\battery-full.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\battery-full.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\battery.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\battery.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bell-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bell-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bell.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bell.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\blockquote-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\blockquote-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\blockquote-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\blockquote-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\book-half-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\book-half-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\book.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\book.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bookmark-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bookmark-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bookmark.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bookmark.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bootstrap-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bootstrap-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bootstrap-reboot.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bootstrap-reboot.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bootstrap.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bootstrap.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\box-arrow-bottom-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\box-arrow-bottom-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\box-arrow-bottom-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\box-arrow-bottom-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\box-arrow-down.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\box-arrow-down.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\box-arrow-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\box-arrow-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\box-arrow-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\box-arrow-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\box-arrow-up-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\box-arrow-up-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\box-arrow-up-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\box-arrow-up-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\box-arrow-up.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\box-arrow-up.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\braces.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\braces.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\brightness-fill-high.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\brightness-fill-high.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\brightness-fill-low.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\brightness-fill-low.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\brightness-high.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\brightness-high.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\brightness-low.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\brightness-low.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\brush.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\brush.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bucket-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bucket-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bucket.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bucket.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\building.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\building.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\bullseye.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\bullseye.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\calendar-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\calendar-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\calendar.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\calendar.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\camera-video-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\camera-video-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\camera-video.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\camera-video.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\camera.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\camera.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\capslock-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\capslock-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\capslock.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\capslock.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chat-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chat-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chat.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chat.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\check-box.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\check-box.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\check-circle.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\check-circle.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\check.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\check.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chevron-compact-down.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chevron-compact-down.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chevron-compact-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chevron-compact-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chevron-compact-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chevron-compact-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chevron-compact-up.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chevron-compact-up.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chevron-down.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chevron-down.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chevron-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chevron-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chevron-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chevron-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\chevron-up.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\chevron-up.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\circle-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\circle-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\circle-half.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\circle-half.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\circle-slash.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\circle-slash.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\circle.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\circle.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\clock-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\clock-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\clock.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\clock.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\cloud-download.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\cloud-download.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\cloud-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\cloud-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\cloud-upload.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\cloud-upload.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\cloud.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\cloud.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\code-slash.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\code-slash.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\code.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\code.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\columns-gutters.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\columns-gutters.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\columns.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\columns.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\command.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\command.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\compass.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\compass.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\cone-striped.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\cone-striped.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\cone.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\cone.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\controller.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\controller.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\credit-card.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\credit-card.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\cursor-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\cursor-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\cursor.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\cursor.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\dash.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\dash.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\diamond-half.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\diamond-half.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\diamond.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\diamond.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\display-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\display-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\display.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\display.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\document-code.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\document-code.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\document-diff.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\document-diff.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\document-richtext.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\document-richtext.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\document-spreadsheet.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\document-spreadsheet.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\document-text.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\document-text.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\document.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\document.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\documents-alt.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\documents-alt.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\documents.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\documents.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\dot.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\dot.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\download.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\download.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\egg-fried.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\egg-fried.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\eject-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\eject-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\eject.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\eject.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\envelope-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\envelope-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\envelope-open-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\envelope-open-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\envelope-open.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\envelope-open.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\envelope.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\envelope.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\eye-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\eye-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\eye-slash-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\eye-slash-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\eye-slash.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\eye-slash.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\eye.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\eye.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\filter.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\filter.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\flag-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\flag-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\flag.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\flag.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\folder-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\folder-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\folder-symlink-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\folder-symlink-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\folder-symlink.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\folder-symlink.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\folder.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\folder.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\fonts.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\fonts.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\forward-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\forward-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\forward.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\forward.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\gear-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\gear-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\gear-wide-connected.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\gear-wide-connected.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\gear-wide.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\gear-wide.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\gear.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\gear.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\geo.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\geo.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\graph-down.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\graph-down.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\graph-up.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\graph-up.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\grid-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\grid-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\grid.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\grid.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\hammer.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\hammer.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\hash.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\hash.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\heart-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\heart-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\heart.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\heart.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\house-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\house-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\house.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\house.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\image-alt.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\image-alt.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\image-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\image-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\image.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\image.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\images.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\images.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\inbox-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\inbox-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\inbox.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\inbox.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\inboxes-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\inboxes-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\inboxes.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\inboxes.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\info-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\info-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\info-square-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\info-square-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\info-square.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\info-square.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\info.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\info.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\justify-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\justify-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\justify-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\justify-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\justify.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\justify.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\kanban-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\kanban-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\kanban.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\kanban.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\laptop.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\laptop.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\layout-sidebar-reverse.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\layout-sidebar-reverse.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\layout-sidebar.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\layout-sidebar.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\layout-split.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\layout-split.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\list-check.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\list-check.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\list-ol.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\list-ol.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\list-task.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\list-task.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\list-ul.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\list-ul.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\list.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\list.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\lock-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\lock-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\lock.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\lock.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\map.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\map.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\mic.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\mic.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\moon.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\moon.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\music-player-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\music-player-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\music-player.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\music-player.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\option.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\option.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\outlet.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\outlet.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\pause-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\pause-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\pause.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\pause.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\pen.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\pen.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\pencil.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\pencil.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\people-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\people-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\people.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\people.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\person-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\person-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\person.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\person.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\phone-landscape.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\phone-landscape.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\phone.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\phone.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\pie-chart-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\pie-chart-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\pie-chart.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\pie-chart.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\play-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\play-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\play.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\play.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\plug.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\plug.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\plus.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\plus.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\power.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\power.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\question-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\question-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\question-square-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\question-square-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\question-square.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\question-square.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\question.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\question.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\reply-all-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\reply-all-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\reply-all.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\reply-all.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\reply-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\reply-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\reply.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\reply.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\screwdriver.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\screwdriver.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\search.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\search.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\shield-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\shield-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\shield-lock-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\shield-lock-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\shield-lock.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\shield-lock.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\shield-shaded.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\shield-shaded.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\shield.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\shield.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\shift-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\shift-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\shift.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\shift.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\skip-backward-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\skip-backward-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\skip-backward.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\skip-backward.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\skip-end-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\skip-end-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\skip-end.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\skip-end.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\skip-forward-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\skip-forward-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\skip-forward.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\skip-forward.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\skip-start-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\skip-start-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\skip-start.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\skip-start.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\speaker.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\speaker.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\square-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\square-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\square-half.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\square-half.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\square.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\square.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\star-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\star-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\star-half.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\star-half.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\star.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\star.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\stop-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\stop-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\stop.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\stop.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\stopwatch-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\stopwatch-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\stopwatch.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\stopwatch.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\sun.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\sun.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\table.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\table.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\tablet-landscape.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\tablet-landscape.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\tablet.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\tablet.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\tag-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\tag-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\tag.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\tag.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\terminal-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\terminal-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\terminal.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\terminal.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\text-center.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\text-center.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\text-indent-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\text-indent-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\text-indent-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\text-indent-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\text-left.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\text-left.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\text-right.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\text-right.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\three-dots-vertical.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\three-dots-vertical.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\three-dots.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\three-dots.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\toggle-off.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\toggle-off.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\toggle-on.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\toggle-on.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\toggles.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\toggles.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\tools.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\tools.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\trash-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\trash-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\trash.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\trash.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\triangle-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\triangle-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\triangle-half.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\triangle-half.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\triangle.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\triangle.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\trophy.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\trophy.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\tv-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\tv-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\tv.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\tv.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\type-bold.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\type-bold.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\type-h1.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\type-h1.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\type-h2.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\type-h2.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\type-h3.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\type-h3.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\type-italic.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\type-italic.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\type-strikethrough.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\type-strikethrough.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\type-underline.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\type-underline.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\type.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\type.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\unlock-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\unlock-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\unlock.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\unlock.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\upload.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\upload.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\volume-down-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\volume-down-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\volume-down.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\volume-down.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\volume-mute-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\volume-mute-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\volume-mute.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\volume-mute.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\volume-up-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\volume-up-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\volume-up.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\volume-up.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\wallet.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\wallet.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\watch.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\watch.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\wifi.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\wifi.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\window.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\window.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\wrench.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\wrench.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\x-circle-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\x-circle-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\x-circle.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\x-circle.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\x-octagon-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\x-octagon-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\x-octagon.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\x-octagon.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\x-square-fill.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\x-square-fill.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\x-square.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\x-square.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\icons\\x.svg",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\icons\\x.svg"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\package-lock.json",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\package-lock.json"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\package.json",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\package.json"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\icons-1.0.0-alpha2\\svgo.yml",
+      "PackagePath": "staticwebassets\\icons-1.0.0-alpha2\\svgo.yml"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\js\\npm.js",
+      "PackagePath": "staticwebassets\\js\\npm.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\My\\Образование\\Универ\\Projects\\Relax-Entity\\RelaxEntityWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RelaxEntityWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RelaxEntityWeb.props",
+      "PackagePath": "build\\RelaxEntityWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RelaxEntityWeb.props",
+      "PackagePath": "buildMultiTargeting\\RelaxEntityWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RelaxEntityWeb.props",
+      "PackagePath": "buildTransitive\\RelaxEntityWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

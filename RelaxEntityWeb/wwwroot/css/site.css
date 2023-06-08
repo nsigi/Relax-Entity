@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: silver;
+}
+
+header {
+    width: 100%;
+    padding: 15px 10%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #007bff;
+}
+
+    header .logo {
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 15px;
+    }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+main {
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 11px 0;
+    margin-top: 15px;
+    color: #fff;
+    background: #007bff;
+}

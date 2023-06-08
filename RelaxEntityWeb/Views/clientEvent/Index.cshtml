@@ -1,0 +1,202 @@
+﻿@model OrderHelper
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="modal fade" id="addEvent" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Добавление мероприятия в заказ</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+					<form asp-action="AddOrder" asp-controller="clientEvents" asp-route-id=@Model.CurrentEventId method="post">
+							<div class="form-group">		
+								<label>Количество людей</label>
+								<input type="number" placeholder="Количество" asp-for="QuantityOfPeople" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-primary" type="submit" id="editManager">Сохранить</button>
+								<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+							</div>
+						</form>
+					</div>					
+				</div>
+			</div>
+	</div>
+
+	<div id="mainwrapper">
+		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+			<ul class="nav mr-auto nav-pills">
+				<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="clientEvents">Мероприятия</a></li>
+				<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="clientOrders">Заказы</a></li>
+				<li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="clientProfile">Профиль</a></li>
+			</ul>
+			
+			<form class="form-inline my-2 my-lg-0 justify-content-end" action="../../Home/Index" method="POST" name="exitForm">
+				<button type="button" class="btn btn-primary" style="margin-right: 15px;">
+					<img src="/icons-1.0.0-alpha2/icons/archive-fill.svg" alt="Корзина" width="32" height="32" title="Bootstrap">
+					@using (var context = new RelaxEntityContext())
+					{
+						var client = context.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+						var orders = context.Orders.Where(x => x.ClientNavigation == client).Distinct().OrderBy(x => x);
+						<span class="badge badge-light">@orders.Count()</span> @*число заказов*@
+					}
+				</button>
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Выйти</button>
+			</form>
+		</nav>
+
+		@using(var context=new RelaxEntityContext())
+		{
+			var curEvent = context.Events.Where(x => x.Id == Model.CurrentEventId).FirstOrDefault();
+			var curProgram = context.Programms.Where(x => x.Id == curEvent.ProgramId).FirstOrDefault();
+			var curLocation = context.Locations.Where(x => x.Id == curEvent.LocationId).FirstOrDefault();
+			var curOrganization = context.Organizations.Where(x => x.Name == curLocation.Organization).FirstOrDefault();
+			var longDate = @curEvent.Date.ToLongDateString();
+			<div class="mx-3" style="max-width: 1200px">
+				<h3>@curEvent.Name</h3>
+				<div class="row">
+					<div class="col ml-4">
+						<div class="mb-3" style="max-width: 300px;">
+							<div class="row">
+								<div class="col-md-2 my-auto">
+									<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="50" height="50" title="Дата проведения" />
+								</div>
+								<div class="col">
+									<p class="m-0 text-muted"><small class="text-muted">Дата проведения</small></p>
+									<p class="m-0">@longDate, @curEvent.Date.DayOfWeek.ToRus()</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="mb-3" style="max-width: 300px;">
+									<div class="row">
+										<div class="col-md-2 my-auto">
+											<img src="/icons-1.0.0-alpha2/icons/watch.svg" alt="" width="50" height="50" title="Время проведения" />
+										</div>
+										<div class="col">
+											<p class="m-0 text-muted"><small class="text-muted">Время проведения</small></p>
+											<p class="m-0">@curEvent.StartTime.ToString(@"hh\:mm")</p>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3" style="max-width: 300px;">
+									<div class="row">
+										<div class="col-md-2 my-auto">
+											<img src="/icons-1.0.0-alpha2/icons/age.jpg" alt="" width="50" height="50" title="Возраст" />
+										</div>
+										<div class="col">
+											<p class="m-0 text-muted"><small class="text-muted">Возраст</small></p>
+											<p class="m-0">@curProgram.Age+</p>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3" style="max-width: 300px;">
+									<div class="row">
+										<div class="col-md-2 my-auto">
+											<img src="/icons-1.0.0-alpha2/icons/people.svg" alt="" width="50" height="50" title="Количество" />
+										</div>
+										<div class="col">
+											<p class="m-0 text-muted"><small class="text-muted">Свободных мест</small></p>
+											<p class="m-0">@curEvent.CountCurrent</p>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3" style="max-width: 300px;">
+									<div class="row">
+										<div class="col-md-2 my-auto">
+											<img src="/icons-1.0.0-alpha2/icons/credit-card.svg" alt="" width="50" height="50" title="Цена" />
+										</div>
+										<div class="col">
+											<p class="m-0 text-muted"><small class="text-muted">Цена (руб)</small></p>
+											<p class="m-0">@curEvent.Price</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="mb-3" style="max-width: 300px;">
+									<div class="row">
+										<div class="col-md-2 my-auto">
+											<img src="/icons-1.0.0-alpha2/icons/house.svg" alt="" width="50" height="50" title="Организация" />
+										</div>
+										<div class="col">
+											<p class="m-0 text-muted"><small class="text-muted">Организация</small></p>
+											<p class="m-0">@curOrganization.Name</p>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3" style="max-width: 300px;">
+									<div class="row">
+										<div class="col-md-2 my-auto">
+											<img src="/icons-1.0.0-alpha2/icons/cursor-fill.svg" alt="" width="50" height="50" title="Адрес" />
+										</div>
+										<div class="col">
+											<p class="m-0 text-muted"><small class="text-muted">Адрес</small></p>
+											<p class="m-0">@curOrganization.Address.</p>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3" style="max-width: 300px;">
+									<div class="row">
+										<div class="col-md-2 my-auto">
+											<img src="/icons-1.0.0-alpha2/icons/geo.svg" alt="" width="50" height="50" title="Место" />
+										</div>
+										<div class="col">
+											<p class="m-0 text-muted"><small class="text-muted">Место</small></p>
+											<p class="m-0">@curLocation.Name</p>
+										</div>
+									</div>
+								</div>
+								<div class="mb-3" style="max-width: 300px;">
+									<div class="row">
+										<div class="col-md-2 my-auto">
+											<img src="/icons-1.0.0-alpha2/icons/stopwatch.svg" alt="" width="50" height="50" title="Длительность" />
+										</div>
+										<div class="col">
+											<p class="m-0 text-muted"><small class="text-muted">Длительность</small></p>
+											<p class="m-0">@curProgram.Duration.ToString(@"hh\:mm")</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card bg-light mb-3">
+							<div class="card-header">Описание</div>
+							<div class="card-body">@curProgram.Description</div>
+						</div>
+						<div class="card bg-light mb-3">
+							<div class="card-header">Примечание</div>
+							<div class="card-body">@curEvent.Note</div>
+						</div>
+					</div>
+					<div class="col">
+						<button astype="button" class="btn text-success" data-toggle="modal" data-target="#addEvent">
+							<svg class="bi bi-plus" width="4em" height="4em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+								<path fill-rule="evenodd" d="M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z" clip-rule="evenodd"></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

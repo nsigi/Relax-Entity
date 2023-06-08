@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#mainwrapper
+{
+	width: 1000px;
+	margin: 0 auto;	
+}
+#header {
+	position: relative;
+	background-color: yellow;
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+#content {
+	position: relative;
+	background-color: lightblue;
+	width: 98%;
+	min-height: 500px;
+	padding: 10px;
+	border-radius: 10px;
+}
+#content:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+#footer {
+	position: relative;
+	font-family: Arial;
+	text-decoration: overline;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #003399;	
+	margin-top: 5px;
+	padding: 10px 0px 0px 10px;
+	background-color: #CCCCCC;
+	width: 99%;
+	height: 50px;
+	clear: both;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#mainmenu {
+	position: relative;
+	background-color: #FFFFDD;
+	list-style-type: none;
+	width: 100%;
+	min-height: 25px;
+	max-height: 75px;
+	margin: 7px 0px;
+	border-radius: 10px;
+}
+#mainmenu  > ul {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	margin-top: 3px;
+}
+#mainmenu  > ul > li{
+	position: relative;
+	text-align: center;
+	float: left;
+	width: 200px;
+}
+#mainmenu   li:hover{
+	cursor: pointer;
+}
+#mainmenu  li  ul{
+	list-style-type: none;
+	position: absolute;
+	visibility: hidden;
+	width: 200px;
+	top: 100%;
+	left: 0;
+	transition: opacity 0.4s linear 0.1s;
+	opacity: 0;
+	z-index: 5;
+}
+#mainmenu  li:hover ul{
+	visibility: visible;
+	opacity: 1;
+}
+#mainmenu  li  ul  li{
+	position: relative;
+	text-decoration: none;
+	font-family: cursive;
+	font-size: 15px;
+	color: #000066;	
+	width: 100%;
+	background-color: #FFFFDD;
+	padding-bottom: 3px;
+}
+#mainmenu a{
+	
+	text-decoration: none;
+	font-family: cursive;
+	font-size: 20px;
+	font-weight: bold;
+	color: #000066;	
+}
+#auth{
+	width: 200px;
+	height: 120px;
+	background-color: transparent;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+.gallery 
+{	
+	margin-top: 10px;
+	margin-left: 5px;
+	clear: both;
+}
+.gallery-item
+{
+	float: left;
+	margin: 10px 0 0 10px;
+}
+.gallery-item img
+{
+	height: 125px;	
+}
+.photo
+{
+	min-height: 300px;
+}
+.photo span
+{
+	font-family: Cueier-new;
+	font-size: 20px;
+	line-height: 150%;
+}
+.user img
+{
+	height: 30px;
+	float: left;
+}
+.users-item
+{
+	text-align: center;
+	float: left;
+	margin: 3px 10px;
+}
+.users-item img
+{
+	height: 100px;
+}
+.full-photo
+{
+	position: relative;
+	width: 500px;
+	float: left;
+	margin-right: 10px;
+}
+.profile span
+{
+	font-family: Cueier-new;
+	font-size: 20px;
+	line-height: 150%;
+}
+.profile a
+{
+	font-size: 17px;
+	font-family: cursive;
+	clear: both;
+}
+.comments
+{
+	margin-top: 5px;
+	border-top: 3px solid black;
+	
+}
+.comment
+{
+	width: 100%;
+	margin-top: 10px;
+}
+textarea
+{
+	
+	height: 5em;
+	width: 99%;
+}
+.info
+{
+	width: 400px;
+	margin-left: 10px;
+}
+.caption
+{
+	font-family: ThreeDDarkShadow;
+	font-size: 20px;
+	font-weight: bold;
+	width: 400px;
+	border-bottom: 3px solid black;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+}
+.func_link
+{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-decoration: underline;
+	font-family: cursive;
+	font-size: 20px;
+	font-weight: bold;
+}
+.user img
+{
+	margin-right: 7px;
+}
+.big-info
+{
+	display: inline-block;
+	width: 400px;
+	height: 100px;
+	overflow: auto;
+	background-color: cyan; 
+}
+.editor textarea
+{
+	height: 5em;
+	width: 400px;
+}
