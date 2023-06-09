@@ -70,7 +70,7 @@
 							</div>
 							<div class="form-group">
 								<label for="note">Примечание</label>
-								<textarea asp-for="Note" class="form-control" id="note" placeholder="Текст описания" rows="4"></textarea>
+								<textarea asp-for="Note" class="form-control" id="note" placeholder="Текст примечания" rows="4"></textarea>
 							</div>
 							<div class="modal-footer">
 								<button class="btn btn-primary" type="submit">Создать</button>
@@ -82,91 +82,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade bd-example-modal-lg" id="editEvent" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Редактирование мероприятия</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label for="edProgram">Программа</label>
-							<select id="edProgram" class="form-control">
-								<option>Занятия для маленьких и тупых!</option>
-								<option>Театр</option>
-								<option>Добровольный труд</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="edEvent">Название мероприятия</label>
-							<div class="row">
-								<div class="w-75 col">
-									<input type="text" placeholder="Название программы" value="Занятия для маленьких и тупых!" class="form-control" id="edEvent">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edDate">Дата</label>
-							<input type="datetime-local" class="form-control" id="edDate"value="2020-06-01T10:30">
-						</div>
-						<div class="form-group">
-							<label for="maxCount">Количество людей</label>
-							<div class="row">
-								<div class="col-auto">
-									<input type="text" placeholder="Количество людей" class="form-control" id="maxCount">
-								</div>
-							</div>
-						</div>			
-						<div class="form-group">
-							<label for="edCost">Цена(руб)</label>
-							<input type="text" id="edCost" placeholder="0" value="0" class="form-control" >
-						</div>
-						<div class="form-group">
-							<label for="edLocation">Место проведения</label>
-							<select id="edLocation" class="form-control">
-								<option>310</option>
-								<option>226</option>
-								<option selected>Площадка</option>
-								<option>Актовый зал</option>
-								<option>Подвал</option>
-							</select>
-						</div>
-						<div class="form-group">	
-							<label for="edNote">Примечание</label>
-							<textarea class="form-control" id="edNote" placeholder="Текст описания" rows="4">Praesent egestas neque eu enim. Morbi ac felis. Suspendisse potenti. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Phasellus blandit leo ut odio. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. In ut quam vitae odio lacinia tincidunt. Donec mi o</textarea>
-						</div>	
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-primary" type="submit">Сохранить</button>
-					<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
-				</div>	
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="deleteEvent" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Удаление мероприятия</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<label>Вы точно хотетите удалить мероприятие?</label>
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-primary" type="submit" id="editManager">Удалить</button>
-					<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
-				</div>	
-			</div>
-		</div>
-	</div>
+	
 	<div id="mainwrapper" style="min-width: 900px">
 		<nav class="navbar navbar-light mb-4" style="background-color: #e3f2fd;">
 			<ul class="nav nav-pills">
@@ -210,81 +126,199 @@
 				Создать мероприятие
 			</button>
 		</div>			
-		<div class="mx-2">
-			<div class="row row-cols-1 row-cols-md-2">
-				@using (var context = new RelaxEntityContext())
+		<div class="row row-cols-1 row-cols-md-2">
+			@using (var context = new RelaxEntityContext())
+			{
+				var curClient = context.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+				var curPm = context.ProjectManagers.Where(x => x.Client == curClient.Email).FirstOrDefault();
+				var events = context.Events.Where(x => x.PmId == curPm.Id && x.Status == (int)EventStatus.Prepared);
+				
+
+				foreach (var event_ in events)
 				{
-					var curClient = context.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
-					var curPm = context.ProjectManagers.Where(x => x.Client == curClient.Email).FirstOrDefault();
-					var events = context.Events.Where(x => x.PmId == curPm.Id && x.Status == (int)EventStatus.Prepared);
-					foreach (var event_ in events)
+					string loc, prog;
+					@using (var context1 = new RelaxEntityContext())
 					{
-						<div class="col mb-4">
-							<div class="card h-100 bg-light">
-								<div class="card-body ml-3">
-									<div class="row mx-2">
-										<div class="col">
-											<div class="row mb-2">
-												<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@event_.Id ><strong>@event_.Name</strong></a></p>
-											</div>
-											<div class="row text-center ml-0">
-												<div class="col-md-0">
-													<div class="row">
-														<div class="my-auto">
-															<img src="/icons-1.0.0-alpha2/icons/age.jpg" alt="" width="35" height="35" title="Возраст" />
-														</div>
-														<div class="col">
-															<p class="m-0 text-muted"><small class="text-muted">Возраст</small></p>
-															@using (var context1 = new RelaxEntityContext())
-															{
-																<p class="m-0">@context1.Programms.Where(x=>x.Id == event_.ProgramId).FirstOrDefault().Age+</p>
-															}
-														</div>
+						var programs = context1.Programms.Where(x => x.Organization == curPm.Organization);
+						var locations = context1.Locations.Where(x => x.Organization == curPm.Organization);
+						loc = locations.Where(x => x.Id == event_.LocationId).FirstOrDefault().Name;
+						prog = programs.Where(x => x.Id == event_.ProgramId).FirstOrDefault().Name;
+					}
+					<div class="col mb-4" style="max-width:600px">
+						<div class="card h-100 bg-light">
+							<div class="card-body ml-3">
+								<div class="row mx-2">
+									<div class="col">
+										<div class="row mb-2">
+											<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@event_.Id ><strong>@event_.Name</strong></a></p>
+										</div>
+										<div class="row text-center ml-0">
+											<div class="col-md-0">
+												<div class="row">
+													<div class="my-auto">
+														<img src="/icons-1.0.0-alpha2/icons/age.jpg" alt="" width="35" height="35" title="Возраст" />
+													</div>
+													<div class="col">
+														<p class="m-0 text-muted"><small class="text-muted">Возраст</small></p>
+														@using (var context1 = new RelaxEntityContext())
+														{
+															<p class="m-0">@context1.Programms.Where(x=>x.Id == event_.ProgramId).FirstOrDefault().Age+</p>
+														}
 													</div>
 												</div>
-												<div class="col">
-													<div class="row text-left">
-														<div class="my-auto">
-															<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей" />
-														</div>
-														<div class="col">
-															<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
-															<p class="m-0">@event_.CountMax</p>
-														</div>
+											</div>
+											<div class="col">
+												<div class="row text-left">
+													<div class="my-auto">
+														<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей" />
+													</div>
+													<div class="col">
+														<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
+														<p class="m-0">@event_.CountMax</p>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="btn-group dropbuttom my-auto">
-											<button type="button" class="btn text-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									</div>
+									<div class="btn-group dropbuttom my-auto">
+										<button type="button" class="btn text-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										</button>
+										<div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink" style="width: 100px">
+											<p><a asp-action="Index" asp-controller="PMEventsPrepare" asp-route-id=@event_.Id method="post">Активировать</a></p>
+											<label class = "@event_.Id" hidden>@prog</label>
+											<label class = "@event_.Id" hidden>@event_.Name</label>
+											<label class = "@event_.Id" hidden>@event_.Date.ToString(@"dd\:MM\:yyyy") @event_.StartTime.ToString(@"hh\:mm")</label>
+											<label class = "@event_.Id" hidden>@event_.CountMax</label>
+											<label class = "@event_.Id" hidden>@event_.Price</label>
+											<label class = "@event_.Id" hidden>@loc</label>
+											<label class = "@event_.Id" hidden>@event_.Note</label>
+											<button onclick=@string.Format("FillFormEdit({0})", event_.Id) type="button" class="btn btn-light" data-toggle="modal" data-target="#editEvent" data-target=".bd-example-modal-lg" data-placement="right" title="Редактировать">
+												Редактировать
 											</button>
-											<div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink" style="width: 100px">
-												<p><a asp-action="Index" asp-controller="PMEventsPrepare" asp-route-id=@event_.Id method="post">Активировать</a></p>
-												<button type="button" class="btn btn-light" data-toggle="modal" data-target="#editEvent" data-target=".bd-example-modal-lg" data-placement="right" title="Редактировать">
-													Редактировать
-												</button>
-												<button type="button" class="btn btn-light" data-toggle="modal" data-target="#deleteEvent" data-placement="right" title="Удалить">
-													Удалить
-												</button>
-											</div>
+											<button onclick=@string.Format("GetEventId1({0})", event_.Id) type="button" class="btn btn-light" data-toggle="modal" data-target="#deleteEvent" data-placement="right" title="Удалить">
+												Удалить
+											</button>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					}
+					</div>
 				}
-			</div>	
+			}
 		</div>
 	</div>
+	<div class="modal fade" id="editEvent" data-backdrop="static" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Редактирование мероприятия</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-content ">
+					@using (var context1 = new RelaxEntityContext())
+					{
+						var client = context1.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+						var pm = context1.ProjectManagers.Where(x => x.Client == client.Email).FirstOrDefault();
+						var locations = context1.Locations.Where(x => x.Organization == pm.Organization);
 
-	<div id="content">
-		<?php echo $tpl['content']?>
+						<form asp-action="EditEvent" asp-controller="PMEventsPrepare" method="post">
+							<div class="form-group">
+								<strong><label for="program" id="editProgramEvent"></label></strong>
+							</div>
+							<div class="form-group">
+								<label for="event">Название мероприятия</label>
+								<div class="row">
+									<div class="w-75 col">
+										<input type="text" asp-for=Name placeholder="Название мероприятия" class="form-control" id="editNameEvent">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+									<label for="date" id="editDateEvent"></label>											
+							</div>
+							<div class="form-group">
+								<label for="maxCount">Количество людей</label>
+								<div class="row">
+									<div class="col-auto">
+										<input type="text" asp-for="CountMax" placeholder="Количество людей" class="form-control" id="editCountMaxEvent">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="cost">Цена (руб)</label>
+								<input type="number" asp-for="Price" placeholder="0" class="form-control" id="editPriceEvent">
+							</div>
+							<div class="form-group">
+								<label for="location">Место проведения</label>
+								<select asp-for="Location" id="editLocationEvent" class="form-control">
+									@foreach (var location in locations)
+									{
+										<option>@location.Name</option>
+									}
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="note">Примечание</label>
+								<input asp-for="Note" class="form-control" id="editNoteEvent" placeholder="Текст примечания"/>
+							</div>
+							<div class="modal-footer">
+								<input type="number" asp-for="CurrentEventId" id="output_id" hidden>
+								<button class="btn btn-primary" type="submit">Сохранить</button>
+								<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+							</div>
+						</form>
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="deleteEvent" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Вы точно хотите удалить мероприятие?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-footer">
+					<form method="post" asp-action="DeleteEvent" asp-controller="PMEventsPrepare">
+						<div>
+							<input type="number" asp-for="CurrentEventId" id="output_id1" hidden>
+							<button class="btn btn-primary" type="submit">Подтвердить</button>
+							<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		function FillFormEdit(id) 
+		{
+			document.getElementById('output_id').value = id;
+			var values = document.getElementsByClassName(id);
+			document.getElementById('editProgramEvent').innerHTML = values[0].innerHTML;
+			document.getElementById('editNameEvent').value = values[1].innerHTML;
+			document.getElementById('editDateEvent').innerHTML = 'Дата текущая: ' + values[2].innerHTML;
+			document.getElementById('editCountMaxEvent').value = values[3].innerHTML;
+			document.getElementById('editPriceEvent').value = values[4].innerHTML;
+			document.getElementById('editLocationEvent').value = values[5].innerHTML;
+			document.getElementById('editNoteEvent').value = values[6].innerHTML;
+		}
+		function GetEventId1(eventId) 
+		{
+			document.getElementById('output_id1').value = eventId;
+		}
+	</script>
+
 </body>
 </html>

@@ -4,7 +4,7 @@
 	{
 		public EventDataHelper()
 		{
-
+			CurrentEventId = -1;
 		}
 
 		public int Id { get; set; }
@@ -30,5 +30,7 @@
 		public string Location { get; set; }
 
 		public string Programm { get; set; }
+
+		public int CurrentEventId { get; set; }
 	}
 }

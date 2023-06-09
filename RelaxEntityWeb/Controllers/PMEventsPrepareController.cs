@@ -23,7 +23,7 @@ namespace RelaxEntityWeb.Controllers
 				var pm = context.ProjectManagers.Where(x => x.Client == client.Email).FirstOrDefault();
 				var programm = context.Programms.Where(x => x.Name == model.Programm).FirstOrDefault();
                 var location = context.Locations.Where(x => x.Name == model.Location).FirstOrDefault();
-				var newEvent = new Event(model.Name,model.Date,model.Date.TimeOfDay, model.CountMax, model.CountMax, model.Note, model.Price, pm.Id, 
+				var newEvent = new Event(model.Name,model.Date,model.Date.TimeOfDay, model.CountMax, 0, model.Note, model.Price, pm.Id, 
                     (int)EventStatus.Prepared,location.Id, programm.Id);
                 context.Events.Add(newEvent);
                 context.SaveChanges();
@@ -39,6 +39,36 @@ namespace RelaxEntityWeb.Controllers
             {
                 var curEvent = context.Events.Where(x => x.Id == eventId).FirstOrDefault();
                 curEvent.Status = (int)EventStatus.Actived;
+                context.SaveChanges();
+            }
+            return View("Index");
+        }
+
+        [HttpPost]
+        public IActionResult EditEvent(EventDataHelper model)
+        {
+            using (var context = new RelaxEntityContext())
+            {
+                var curEvent = context.Events.Where(x => x.Id == model.CurrentEventId).FirstOrDefault();
+                var location = context.Locations.Where(x => x.Name == model.Location).FirstOrDefault();
+                curEvent.Name = model.Name;
+                //curEvent.Date = model.Date;
+                //curEvent.StartTime = model.Date.TimeOfDay;
+                if (curEvent.CountCurrent < model.CountMax)
+                    curEvent.CountMax = model.CountMax;
+                curEvent.Note = model.Note;
+                curEvent.Price = model.Price;
+                curEvent.LocationId = location.Id;
+                context.SaveChanges();
+            }
+            return View("Index");
+        }
+
+        [HttpPost]
+        public IActionResult DeleteEvent(EventDataHelper model)
+        {
+            using (var context = new RelaxEntityContext()) {
+                context.Events.Remove(context.Events.Where(x => x.Id == model.CurrentEventId).FirstOrDefault());
                 context.SaveChanges();
             }
             return View("Index");

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\_Asus_\\Desktop\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj": {}
+    "C:\\Users\\_Asus_\\Documents\\Study\\ТСП\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\_Asus_\\Desktop\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj": {
+    "C:\\Users\\_Asus_\\Documents\\Study\\ТСП\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\_Asus_\\Desktop\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj",
+        "projectUniqueName": "C:\\Users\\_Asus_\\Documents\\Study\\ТСП\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj",
         "projectName": "RelaxEntityWeb",
-        "projectPath": "C:\\Users\\_Asus_\\Desktop\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj",
+        "projectPath": "C:\\Users\\_Asus_\\Documents\\Study\\ТСП\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj",
         "packagesPath": "C:\\Users\\_Asus_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\_Asus_\\Desktop\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\obj\\",
+        "outputPath": "C:\\Users\\_Asus_\\Documents\\Study\\ТСП\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -4,7 +4,7 @@
 	{
         public ProgramDataHelper()
         {
-            
+			CurrentProgramId = -1;
         }
 
 		public string Name { get; set; }
@@ -19,5 +19,8 @@
 		{
 			return string.Format("{0} {1} {2} {3}", Name, Description, Duration, Age);
 		}
+
+		public int CurrentProgramId { get; set; }
+
 	}
 }

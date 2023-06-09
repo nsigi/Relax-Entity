@@ -2,6 +2,10 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        // КОММЕНТИРУЙ ЭТУ СТРОЧКУ
+        string dir = "C:\\Users\\_Asus_\\Documents\\Study\\ТСП\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\wwwroot";
+
+        Directory.SetCurrentDirectory(dir);
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.

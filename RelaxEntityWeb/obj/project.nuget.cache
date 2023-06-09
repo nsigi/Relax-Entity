@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "82JkQXqUIQJUWGb9WMxxugAwEr2Sgl9SMTKZnhBywUbpx/2+Vn2yyfJGHIuD9hHswhSkx5pb/pLOZHXBV0R1Jw==",
+  "dgSpecHash": "IT/RQp4BKn1tl6moas1G6AxGa2S5NmLUQN1zMDS07Eyu2OpMSfVzT7swT5YZfKJLmmJ8RPauURYxNlWfEOuA+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\_Asus_\\Desktop\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj",
+  "projectFilePath": "C:\\Users\\_Asus_\\Documents\\Study\\ТСП\\RelaxEntity\\Relax-Entity\\RelaxEntityWeb\\RelaxEntityWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\_Asus_\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\_Asus_\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

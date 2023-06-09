@@ -28,7 +28,39 @@ namespace RelaxEntityWeb.Controllers
 			return View("Index");
 		}
 
-		public IActionResult Index()
+        [HttpPost]
+        public IActionResult EditProgram(ProgramDataHelper model)
+        {
+            using (var context = new RelaxEntityContext())
+            {
+                var curProgram = context.Programms.Where(x => x.Id == model.CurrentProgramId).FirstOrDefault();
+                var client = context.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+                var pm = context.ProjectManagers.Where(x => x.Client == client.Email).FirstOrDefault();
+                curProgram.Name = model.Name;
+                curProgram.Description = model.Description;
+                curProgram.Duration = model.Duration;
+                curProgram.Age = model.Age;
+                curProgram.Organization = pm.Organization;
+
+                context.SaveChanges();
+            }
+            return View("Index");
+        }
+
+        [HttpPost]
+        public IActionResult DeleteProgram(ProgramDataHelper model)
+        {
+            using (var context = new RelaxEntityContext())
+            {
+                if (context.Events.Where(x=>x.ProgramId == model.CurrentProgramId).FirstOrDefault() == null) {
+                    context.Programms.Remove(context.Programms.Where(x => x.Id == model.CurrentProgramId).FirstOrDefault());
+                    context.SaveChanges();
+                }
+            }
+            return View("Index");
+        }
+
+        public IActionResult Index()
         {
             return View();
         }
