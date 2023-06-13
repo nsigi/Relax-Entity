@@ -60,7 +60,7 @@
 					org = pm.Organization;
 				}
 				@using (var context4 = new RelaxEntityContext()) {
-					var ords = context4.Orders.Where(x=>x.Event.Pm.Organization == org);
+					var ords = context4.Orders.Where(x=>x.Event.Pm.Organization == org).Distinct();
 					foreach (var ord in ords) {
 						<div class="col mb-4">
 							<div class="card h-100 bg-light">
@@ -82,7 +82,7 @@
 														</div>
 														<div class="col">
 															<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
-															<p class="m-0">@ord.Date</p>
+															<p class="m-0">@ord.Date.Value.ToShortDateString()</p>
 														</div>
 													</div>
 												</div>
