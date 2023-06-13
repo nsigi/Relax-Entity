@@ -5,9 +5,6 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>
-		<?php echo $tpl['title']?>
-	</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -33,7 +30,7 @@
 						</div>
 						<div class="form-group">
 							<label>Оснащённость</label>
-							<textarea asp-for="Equipment" type="email" placeholder="Описание места" rows="3" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+							<textarea asp-for="Equipment" type="text" placeholder="Описание места" rows="3" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
 						</div>
 						<div class="modal-footer">
 							<button class="btn btn-primary" type="submit" id="editUser">Добавить</button>
@@ -101,21 +98,30 @@
 								<th scope="col">Название</th>
 								<th scope="col">Вместительность (чел.)</th>
 								<th scope="col">Оснащённость</th>
-								<th scope="col">Редактировать</th>
+								<th scope="col"></th>
+								<th scope="col"></th>
 							</tr>
 						</thead>
 						<tbody>
 							@foreach (var curLocation in locations)
 							{
 								<tr>
-									<td>@curLocation.Name</td>
-									<td>@curLocation.Capaciousness</td>
-									<td>@curLocation.Equipment</td>
+									<td class="@curLocation.Id">@curLocation.Name</td>
+									<td class="@curLocation.Id">@curLocation.Capaciousness</td>
+									<td class="@curLocation.Id">@curLocation.Equipment</td>
 									<td>
-										<button type="button" class="btn" data-toggle="modal" data-target="#editLocation" title="Редактировать">
+										<button onclick=@string.Format("FillFormEdit({0})", curLocation.Id) type="button" class="btn" data-toggle="modal" data-target="#editLocation" title="Редактировать">
 											<svg class="bi bi-pencil text-primary" width="2.5em" height="2.5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 												<path fill-rule="evenodd" d="M13.293 3.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391l9-9zM14 4l2 2-9 9-3 1 1-3 9-9z" clip-rule="evenodd"></path>
 												<path fill-rule="evenodd" d="M14.146 8.354l-2.5-2.5.708-.708 2.5 2.5-.708.708zM5 12v.5a.5.5 0 00.5.5H6v.5a.5.5 0 00.5.5H7v.5a.5.5 0 00.5.5H8v-1.5a.5.5 0 00-.5-.5H7v-.5a.5.5 0 00-.5-.5H5z" clip-rule="evenodd"></path>
+											</svg>
+										</button>
+									</td>
+									<td>
+										<button onclick=@string.Format("GetLocationId({0})", curLocation.Id) type="submit" class="btn text-danger" data-toggle="modal" data-target="#deleteLocation" title="Удалить">
+											<svg class="bi bi-trash" width="3em" height="3em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.5 7.5A.5.5 0 018 8v6a.5.5 0 01-1 0V8a.5.5 0 01.5-.5zm2.5 0a.5.5 0 01.5.5v6a.5.5 0 01-1 0V8a.5.5 0 01.5-.5zm3 .5a.5.5 0 00-1 0v6a.5.5 0 001 0V8z"></path>
+												<path fill-rule="evenodd" d="M16.5 5a1 1 0 01-1 1H15v9a2 2 0 01-2 2H7a2 2 0 01-2-2V6h-.5a1 1 0 01-1-1V4a1 1 0 011-1H8a1 1 0 011-1h2a1 1 0 011 1h3.5a1 1 0 011 1v1zM6.118 6L6 6.059V15a1 1 0 001 1h6a1 1 0 001-1V6.059L13.882 6H6.118zM4.5 5V4h11v1h-11z" clip-rule="evenodd"></path>
 											</svg>
 										</button>
 									</td>
@@ -124,14 +130,75 @@
 						</tbody>
 					</table>
 				</div>
-
 			}
 		</div>
 	</div>
-
-	<div id="content">
-		<?php echo $tpl['content']?>
+	<div class="modal fade" id="editLocation" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Редактирование локации</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form asp-action="EditLocation" asp-controller="PMLocations" method="post">
+						<div class="form-group">
+							<label>Название локации</label>
+							<input asp-for="Name" type="text" placeholder="Название локации" class="form-control" id="editNameLoc">
+						</div>
+						<div class="form-group">
+							<label>Вместительность</label>
+							<input asp-for="Capaciousness" type="text" placeholder="Максимальное количество человек" class="form-control" id="editCapacLoc">
+						</div>
+						<div class="form-group">
+							<label>Оснащённость</label>
+							<input asp-for="Equipment" type="text" placeholder="Описание места" rows="3" class="form-control" id="editEqLoc" aria-describedby="emailHelp"></input>
+						</div>
+						<div class="modal-footer">
+							<input type="number" asp-for="CurrentLocationId" id="output_id" hidden>
+							<button class="btn btn-primary" type="submit" id="editUser">Сохранить</button>
+							<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
+	<div class="modal fade" id="deleteLocation" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Вы точно хотите удалить локацию?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-footer">
+					<form method="post" asp-action="DeleteLocation" asp-controller="PMLocations">
+						<div>
+							<input type="number" asp-for="CurrentLocationId" id="output_id1" hidden>
+							<button class="btn btn-primary" type="submit">Подтвердить</button>
+							<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function FillFormEdit(id){
+			document.getElementById('output_id').value = id;
+			var data = document.getElementsByClassName(id);
+			document.getElementById('editNameLoc').value = data[0].innerHTML;
+			document.getElementById('editCapacLoc').value = data[1].innerHTML;
+			document.getElementById('editEqLoc').value = data[2].innerHTML;
+		}
+		function GetLocationId(id){
+			document.getElementById('output_id1').value = id;
+		}
+	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

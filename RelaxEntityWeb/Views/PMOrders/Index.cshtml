@@ -46,153 +46,208 @@
 			var orders = context.Orders.Where(x => x.Status==StatusOrderHelper.Payed);
 			foreach (var order in orders)
 			{
-					Event event_; Client client;
-					@using (var context1 = new RelaxEntityContext())
-					{ event_ = context1.Events.Where(x => x.Id==order.EventId).FirstOrDefault();}
-					@using (var context2 = new RelaxEntityContext())
-					{
-						client = context2.Clients.Where(x => x.Email==order.ClientId).FirstOrDefault();
-					}
-					<div class="col mb-4">
-				<div class="card h-100 bg-light">
-					<div class="card-body">
-						<div class="row">
-							<div class="px-3 text-center">
-								<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
-								<p class="card-title"><small>@client.Name</small></p>
-							</div>
-							<div class="px-3">
-								<div class="row mb-2">
-									<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@order.EventId ><strong>@event_.Name</strong></a></p>
-								</div>
-								<div class="row text-left">
-									<div class="col" style="max-width: 300px;">
-										<div class="row">
-											<div class="my-auto">
-												<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
+				Event event_; Client client; String org;
+				@using (var context1 = new RelaxEntityContext())
+				{ event_ = context1.Events.Where(x => x.Id==order.EventId).FirstOrDefault();}
+				@using (var context2 = new RelaxEntityContext())
+				{
+					client = context2.Clients.Where(x => x.Email==order.ClientId).FirstOrDefault();
+				}
+				@using (var context3 = new RelaxEntityContext())
+				{
+					var cl = context3.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+					var pm = context3.ProjectManagers.Where(x => x.Client == cl.Email).FirstOrDefault();
+					org = pm.Organization;
+				}
+				@using (var context4 = new RelaxEntityContext()) {
+					var ords = context4.Orders.Where(x=>x.Event.Pm.Organization == org);
+					foreach (var ord in ords) {
+						<div class="col mb-4">
+							<div class="card h-100 bg-light">
+								<div class="card-body">
+									<div class="row">
+										<div class="px-3 text-center">
+											<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
+											<p class="card-title"><small>@client.Name</small></p>
+										</div>
+										<div class="px-3">
+											<div class="row mb-2">
+												<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@ord.EventId ><strong>@event_.Name</strong></a></p>
 											</div>
-											<div class="col">
-												<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
-												<p class="m-0">@order.Date</p>
+											<div class="row text-left">
+												<div class="col" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
+															<p class="m-0">@ord.Date</p>
+														</div>
+													</div>
+												</div>
+												<div class="col" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
+															<p class="m-0">@ord.Count</p>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col" style="max-width: 300px;">
-										<div class="row">
-											<div class="my-auto">
-												<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
-											</div>
-											<div class="col">
-												<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
-												<p class="m-0">@order.Count</p>
-											</div>
-										</div>
-									</div>
-								</div>
+								</div>	
 							</div>
 						</div>
-					</div>	
-				</div>
-			</div>
+					} 
+				}
 			}
 		}
-	</div>
-
-
-		<h3>Отменённые</h3>		
-		<div class="row row-cols-1 row-cols-md-2">
-			<div class="col mb-4">
-				<div class="card h-100 bg-light">
-					<div class="card-body">
-						<div class="row">
-							<div class="px-3 text-center">
-								<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
-								<p class="card-title"><small>Иванов И.А.</small></p>
-							</div>
-							<div class="px-3">
-								<div class="row mb-2">
-									<p class="card-text"><a href="../../PMEvent/Index"><strong>Творческая игровая программа "Юный модельер"</strong></a></p>
-								</div>
-								<div class="row text-left">
-									<div class="col" style="max-width: 300px;">
-										<div class="row">
-											<div class="my-auto">
-												<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
-											</div>
-											<div class="col">
-												<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
-												<p class="m-0">15-05-2023</p>
-											</div>
-										</div>
-									</div>
-									<div class="col" style="max-width: 300px;">
-										<div class="row">
-											<div class="my-auto">
-												<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
-											</div>
-											<div class="col">
-												<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
-												<p class="m-0">150</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
 		</div>
 
-
-		<h3>Завершённые</h3>			
+		<h3>Отмененные</h3>
 		<div class="row row-cols-1 row-cols-md-2">
-			<div class="col mb-4">
-				<div class="card h-100 bg-light">
-					<div class="card-body">
-						<div class="row">
-							<div class="px-3 text-center">
-								<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
-								<p class="card-title"><small>Иванов И.А.</small></p>
-							</div>
-							<div class="px-3">
-								<div class="row mb-2">
-									<p class="card-text"><a href="../../PMEvent/Index"><strong>Творческая игровая программа "Юный модельер"</strong></a></p>
-								</div>
-								<div class="row text-left">
-									<div class="col" style="max-width: 300px;">
-										<div class="row">
-											<div class="my-auto">
-												<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
+		@using (var context = new RelaxEntityContext())
+		{
+			var orders = context.Orders.Where(x => x.Status==StatusOrderHelper.Canceled);
+			foreach (var order in orders)
+			{
+				Event event_; Client client; String org;
+				@using (var context1 = new RelaxEntityContext())
+				{ event_ = context1.Events.Where(x => x.Id==order.EventId).FirstOrDefault();}
+				@using (var context2 = new RelaxEntityContext())
+				{
+					client = context2.Clients.Where(x => x.Email==order.ClientId).FirstOrDefault();
+				}
+				@using (var context3 = new RelaxEntityContext())
+				{
+					var cl = context3.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+					var pm = context3.ProjectManagers.Where(x => x.Client == cl.Email).FirstOrDefault();
+					org = pm.Organization;
+				}
+				@using (var context4 = new RelaxEntityContext()) {
+					var ords = context4.Orders.Where(x=>x.Event.Pm.Organization == org);
+					foreach (var ord in ords) {
+						<div class="col mb-4">
+							<div class="card h-100 bg-light">
+								<div class="card-body">
+									<div class="row">
+										<div class="px-3 text-center">
+											<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
+											<p class="card-title"><small>@client.Name</small></p>
+										</div>
+										<div class="px-3">
+											<div class="row mb-2">
+												<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@ord.EventId ><strong>@event_.Name</strong></a></p>
 											</div>
-											<div class="col">
-												<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
-												<p class="m-0">15-05-2023</p>
+											<div class="row text-left">
+												<div class="col" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
+															<p class="m-0">@ord.Date</p>
+														</div>
+													</div>
+												</div>
+												<div class="col" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
+															<p class="m-0">@ord.Count</p>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col" style="max-width: 300px;">
-										<div class="row">
-											<div class="my-auto">
-												<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
-											</div>
-											<div class="col">
-												<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
-												<p class="m-0">150</p>
-											</div>
-										</div>
-									</div>
-								</div>
+								</div>	
 							</div>
 						</div>
-					</div>	
-				</div>
-			</div>
+					} 
+				}
+			}			
+		}
 		</div>
-	</div>
 
-	<div id="content">
-		<?php echo $tpl['content']?>
+		<h3>Проведенные</h3>
+		<div class="row row-cols-1 row-cols-md-2">
+		@using (var context = new RelaxEntityContext())
+		{
+			var orders = context.Orders.Where(x => x.Status==StatusOrderHelper.Completed);
+			foreach (var order in orders)
+			{
+				Event event_; Client client; String org;
+				@using (var context1 = new RelaxEntityContext())
+				{ event_ = context1.Events.Where(x => x.Id==order.EventId).FirstOrDefault();}
+				@using (var context2 = new RelaxEntityContext())
+				{
+					client = context2.Clients.Where(x => x.Email==order.ClientId).FirstOrDefault();
+				}
+				@using (var context3 = new RelaxEntityContext())
+				{
+					var cl = context3.Clients.Where(x => x.Email == UserSession.CurrentUserEmail).FirstOrDefault();
+					var pm = context3.ProjectManagers.Where(x => x.Client == cl.Email).FirstOrDefault();
+					org = pm.Organization;
+				}
+				@using (var context4 = new RelaxEntityContext()) {
+					var ords = context4.Orders.Where(x=>x.Event.Pm.Organization == org);
+					foreach (var ord in ords) {
+						<div class="col mb-4">
+							<div class="card h-100 bg-light">
+								<div class="card-body">
+									<div class="row">
+										<div class="px-3 text-center">
+											<img src="/icons-1.0.0-alpha2/icons/person.svg" alt="" width="75px" height="75px">
+											<p class="card-title"><small>@client.Name</small></p>
+										</div>
+										<div class="px-3">
+											<div class="row mb-2">
+												<p class="card-text"><a asp-action="Index" asp-controller="PMEvent" asp-route-id=@ord.EventId ><strong>@event_.Name</strong></a></p>
+											</div>
+											<div class="row text-left">
+												<div class="col" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/calendar.svg" alt="" width="35" height="35" title="Дата заказа">
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Дата заказа</small></p>
+															<p class="m-0">@ord.Date</p>
+														</div>
+													</div>
+												</div>
+												<div class="col" style="max-width: 300px;">
+													<div class="row">
+														<div class="my-auto">
+															<img src="/icons-1.0.0-alpha2/icons/people-fill.svg" alt="" width="35" height="35" title="Количество людей">
+														</div>
+														<div class="col">
+															<p class="m-0 text-muted"><small class="text-muted">Количество людей</small></p>
+															<p class="m-0">@ord.Count</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					} 
+				}
+			}	
+		}
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
